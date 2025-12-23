@@ -1,0 +1,160 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+#description {
+    width: 90%;
+    max-width: 800px;
+    margin: 10px 0 20px 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+#description h2 {
+    margin-top: 0;
+    color: #34495e;
+    text-align: center;
+}
+
+#description ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#description li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+#description li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #3498db;
+}
+
+#era-selection {
+    margin: 20px 0;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#quiz-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.drop-zone {
+    border: 2px dashed #a5b4c8;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    min-height: 300px;
+    width: 45%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.event-card {
+    background-color: #eaf5ff;
+    border: 1px solid #b8d9f3;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: grab;
+    user-select: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-weight: 500;
+}
+
+.event-card:hover {
+    background-color: #dceefc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.event-card.dragging {
+    opacity: 0.5;
+    background-color: #a5b4c8;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#next-button {
+    background-color: #2ecc71;
+}
+
+#next-button:hover {
+    background-color: #27ae60;
+}
+
+#share-button {
+    background-color: #9b59b6;
+}
+
+#share-button:hover {
+    background-color: #8e44ad;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 50px;
+    text-align: center;
+}
+
+.correct {
+    color: #27ae60;
+}
+
+.incorrect {
+    color: #e74c3c;
+}
+
+#result p {
+    margin: 5px 0;
+    font-size: 16px;
+}

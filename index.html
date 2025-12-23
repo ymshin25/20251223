@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>역사 순서 퀴즈</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>역사 순서 퀴즈</h1>
+    <div id="description">
+        <h2>게임 방법</h2>
+        <ul>
+            <li>화면에 2~4개의 역사적 사건 카드가 무작위로 제시됩니다.</li>
+            <li>사건이 일어난 순서대로 카드를 오른쪽 타임라인으로 드래그 앤 드롭하여 정렬하세요.</li>
+            <li>'확인' 버튼을 누르면 정답 여부와 실제 연도가 표시됩니다.</li>
+            <li>상단의 드롭다운 메뉴에서 시대별 퀴즈를 선택할 수 있습니다.</li>
+        </ul>
+    </div>
+    <div id="era-selection">
+        <label for="era">시대 선택:</label>
+        <select name="era" id="era">
+            <option value="all">전체</option>
+            <option value="three-kingdoms">삼국시대</option>
+            <option value="goryeo">고려시대</option>
+        </select>
+    </div>
+    <div id="quiz-container">
+        <div id="events-container" class="drop-zone" aria-label="제시된 사건 목록"></div>
+        <div id="timeline-container" class="drop-zone" aria-label="시간순으로 정렬하는 곳"></div>
+    </div>
+    <div class="button-container">
+        <button id="check-button">확인</button>
+        <button id="next-button" style="display: none;">다음 퀴즈</button>
+        <button id="share-button">공유하기</button>
+    </div>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
